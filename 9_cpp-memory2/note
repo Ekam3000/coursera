@@ -1,0 +1,50 @@
+in C++, an instance of a variable/class can be  stored  directly in memory , accessed by pointer or accessed by reference .
+
+direct storage->
+Cube c;
+int i;
+
+storage by pointer->
+
+
+storage by reference->
+
+->A reference is an alias to existing memory and is denoted
+ in the type with an ampersand (&).
+->A reference does not store memory itself, it is only an
+ alias to another variable.reference variable has zero size . takes zero bytes of memory to create a reference veriable 
+->The alias must be assigned when the variable is
+ initialized means ->
+  Cube &c = cube; this is true 
+  Cube &c;
+  c=Cube;  this is not true 
+
+                         
+  Cube &c = cube; //Alias to the variable `cube`
+                      
+  int &i = count; // Alias to the variable 'i'
+
+uiuc::HSLAPixel &p; // Illegal!Must alias something when variable is initialized.
+
+
+
+
+Pass by ______________
+Identical to storage, arguments can be passed to functions
+in three different ways:
+  Pass by value (default)
+  Pass by pointer (modified with *)
+  Pass by reference (modified with &, acts as an alias)
+
+here in example to we will be tranfer money to another person (by passing )
+
+
+
+
+return by __________
+Similarly, values can be returned all three ways as well:
+  ..Return by value (default)
+  ..Return by pointer (modified with *)
+  ..Return by reference (modified with &, acts as an alias)
+   - Never return a reference to a stack variable created on the
+     stack of your current function!

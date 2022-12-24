@@ -7,12 +7,15 @@
 
 #include "Cube.h"
 #include <iostream>
-
+// the opstream header includes operations for reading/writing to files and the console itself , including std:: cout.
+// std ::cout--> console out
+// std denoting the standard template library namespace
 namespace uiuc {  
   Cube::Cube(double length) {
     length_ = length;
   }
 
+// Cube :: means we are going to implement our function
   double Cube::getVolume() const {
     return length_ * length_ * length_;
   }
